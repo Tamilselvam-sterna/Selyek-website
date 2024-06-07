@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Roboto+Slab&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-x-hidden font-gabarito;
+  }
+
+  * {
+    @apply m-0 p-0 box-border scroll-smooth antialiased;
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+    border-style: solid;
+    border-color: theme("borderColor.DEFAULT", currentColor);
+  }
+
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    @apply no-underline text-textColor;
+  }
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .default-button {
+    @apply px-3 py-1.5 border border-textColor bg-transparent text-textColor font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95;
+  }
+
+  .input-label {
+    @apply text-sm font-medium text-gray-900;
+  }
+
+  .input-label-dark {
+    @apply text-sm font-medium text-textColor;
+  }
+
+  .input {
+    @apply bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+  }
+
+  .input-dark {
+    @apply bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 2s;
+  }
+  .animation-delay-400 {
+    animation-delay: 4s;
+  }
+  .animation-delay-600 {
+    animation-delay: 6s;
+  }
+}
