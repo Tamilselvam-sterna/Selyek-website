@@ -1,31 +1,31 @@
-import { Card } from "@mantine/core";
+import { SimpleGrid } from "@mantine/core";
 import { clientsMarqueeUrl } from "../constants/index";
 
 function Clients() {
   return (
-    <div className="flex flex-col w-full">
-      <div className="h-[100px] bg-primary1 w-full">
-        <p className="flex h-[100px] justify-center align-middle items-center font-bold text-4xl text-gray-200">
+    <>
+      <div className="h-[100px] bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 w-full">
+        <p className="flex h-[100px] justify-center items-center font-bold text-4xl text-gray-700">
           Working With the Best Clients and Partners
         </p>
       </div>
 
-      <div className="grid grid-cols-5 align-middle justify-center gap-6  mt-14 px-36 items-center">
-        {clientsMarqueeUrl.map((client) => (
-          <Card shadow="sm" padding="xl" radius="md" withBorder>
-            <Card.Section>
+      <div className="relative px-6 py-4 space-y-4 container max-container  flex flex-1 flex-col items-center justify-center ">
+        <SimpleGrid cols={3} spacing={"xl"}>
+          {clientsMarqueeUrl.map((client, index) => (
+            <div className="bg-white rounded-lg">
               <img
                 src={client.href}
-                height={180}
+                alt="client "
                 width={300}
-                alt="lock"
-                className="content-center"
+                height={300}
+                className="object-contain"
               />
-            </Card.Section>
-          </Card>
-        ))}
+            </div>
+          ))}
+        </SimpleGrid>
       </div>
-    </div>
+    </>
   );
 }
 

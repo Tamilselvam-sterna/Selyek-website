@@ -3,29 +3,48 @@ import { CiLinkedin, CiMail } from "react-icons/ci";
 
 function Footer() {
   return (
-    <div className="text-textColor max-container px-6 w-full">
-      <div className="flex space-x-44">
+    <div className="text-graay  max-container px-6 w-full ">
+      <div className="flex justify-between">
         <ul>
-          <li className="font-bold text-2xl">Company</li>
+          <li className="font-bold text-2xl text-primary">Company</li>
           <div className="flex flex-col space-y-3 pt-2">
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li>
+              <a href="#about-us" className="text-graay hover:underline">
+                About Us
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#contact-us" className="text-graay hover:underline">
+                Contact Us
+              </a>
+            </li>
             <li>Careers</li>
           </div>
         </ul>
         <ul>
-          <li className="font-bold text-2xl">Products</li>
+          <li className="font-bold text-2xl text-primary">Products</li>
           <div className="flex flex-col space-y-3 pt-2">
-            <li>Smart Padlock</li>
+            <li>
+              {" "}
+              <a href="#products" className="text-graay hover:underline">
+                Smart Padloclk
+              </a>
+            </li>
             <li>GateWay</li>
-            <li>Green Seal</li>
+            <li>
+              {" "}
+              <a href="#products" className="text-graay hover:underline">
+                Green Seal
+              </a>
+            </li>
           </div>
         </ul>
         <ul>
-          <li className="font-bold text-2xl">Solutions</li>
+          <li className="font-bold text-2xl text-primary">Solutions</li>
         </ul>
         <ul>
-          <li className="font-bold text-2xl">Resources</li>
+          <li className="font-bold text-2xl text-primary">Resources</li>
           <div className="flex flex-col space-y-3 pt-2">
             <li>Blog</li>
             <li>Support</li>

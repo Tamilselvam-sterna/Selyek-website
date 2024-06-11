@@ -16,6 +16,9 @@ export default {
         primary1: "#00B5E2",
         black: "#141212",
         graay: "#606A70",
+        gradient1: "#84ffc9",
+        gradient2: "#aab2ff",
+        gradient3: "#eca0ff",
       },
       animation: {
         tilt: "tilt 10s infinite linear",

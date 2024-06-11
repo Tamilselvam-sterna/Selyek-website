@@ -4,7 +4,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import clsx from "clsx";
 import { SearchNormal, User } from "iconsax-react";
-import { Input } from "@mantine/core";
+import { Button, Input, Menu } from "@mantine/core";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,13 +56,29 @@ function Navbar() {
             >
               Services
             </a>
-            <a
-              href="#products"
-              className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
+            <Menu trigger="hover">
+              <Menu.Target>
+                <a
+                  href="#products"
+                  className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
             "
-            >
-              Products
-            </a>
+                >
+                  Products
+                </a>
+              </Menu.Target>
+
+              <Menu.Dropdown>
+                <div className="bg-white h-10 w-50 flex px-3 flex-col justify-center rounded-xl">
+                  <a
+                    href="#products"
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
+            "
+                  >
+                    Padlocks
+                  </a>
+                </div>
+              </Menu.Dropdown>
+            </Menu>
             <ul className="dropdown hidden absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg">
               <li>
                 <a

@@ -4,8 +4,8 @@ import contactUsImg from "../assets/contact-us.svg";
 function ContactUs() {
   return (
     <>
-      <div className="h-[100px] bg-primary1 w-full">
-        <p className="flex h-[100px] justify-center align-middle items-center font-bold text-4xl text-gray-200">
+      <div className="h-[100px] bg-gradient-to-r from-gradient1  via-gradient2 to-gradient3  w-full">
+        <p className="flex h-[100px] justify-center align-middle items-center font-bold text-4xl text-gray-700">
           Contact Us
         </p>
       </div>
