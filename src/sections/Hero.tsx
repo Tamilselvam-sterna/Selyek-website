@@ -43,7 +43,7 @@ function Hero() {
         </motion.div>
         <motion.div
           variants={heroSectionVariant}
-          className="px-5 md:px-10 py-2 md:py-4 text-center leading-normal font-medium tracking-normal md:tracking-wide text-primary font-montserrat  md:text-lg max-w-screen-lg"
+          className=" px-5 md:px-10 py-2 md:py-4 text-center leading-normal font-medium tracking-normal md:tracking-wide text-primary font-montserrat  md:text-lg max-w-screen-lg"
         >
           Discover advanced security solutions tailored for your business. Our
           cutting-edge technologies, including electromechanical locks, safe

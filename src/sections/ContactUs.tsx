@@ -1,5 +1,6 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import contactUsImg from "../assets/contact-us.svg";
+import { Input, Textarea } from "@mantine/core";
 
 function ContactUs() {
   return (
@@ -9,7 +10,7 @@ function ContactUs() {
           Contact Us
         </p>
       </div>
-      <div className="relative max-container w-11/12 md:w-9/12 xl:w-1/2 border grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-10 justify-start bg-textColor px-8 pt-4 lg:px-16 mt-12 py-10 lg:py-14 rounded-md shadow-xl">
+      <div className="relative max-container w-11/12 md:w-9/12 xl:w-1/2  border grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-10 justify-start bg-textColor px-8 pt-4 lg:px-16 mt-12 py-10 lg:py-14 rounded-md shadow-xl">
         <div>
           <p className="text-4xl font-extrabold  text-primary1">Contact</p>
           <p className="tracking-normal leading-none font-normal mt-2">
@@ -27,40 +28,45 @@ function ContactUs() {
             <label htmlFor="firstName" className="input-label">
               First name
             </label>
-            <input
+            <Input
               type="text"
               id="firstName"
-              className="input border border-solid border-primary1"
+              radius={"md"}
+              size="md"
+              className=""
               placeholder="John"
               required
             />
             <label htmlFor="lastName" className="input-label">
               Last name
             </label>
-            <input
+            <Input
               type="text"
               id="lastName"
-              className="input border border-solid border-primary1"
+              radius={"md"}
+              size="md"
               placeholder="Doe"
               required
             />
             <label htmlFor="email" className="input-label">
               Email
             </label>
-            <input
+            <Input
               type="email"
               id="email"
-              className="input border border-solid border-primary1"
+              radius={"md"}
+              size="md"
               placeholder="Johndoe@gmail.com"
               required
             />
             <label htmlFor="mobile" className="input-label">
               Mobile Number
             </label>
-            <input
+            <Input
               type="number"
               id="mobile"
-              className="input border border-solid border-primary1"
+              radius={"md"}
+              size="md"
               placeholder="9876543210"
               required
             />
@@ -68,11 +74,7 @@ function ContactUs() {
               Message
             </label>
             <div>
-              <textarea
-                rows={4}
-                cols={47}
-                className=" input border border-solid border-primary1 rounded-md"
-              />
+              <Textarea rows={4} cols={47} />
             </div>
           </div>
           <button className="mt-4 w-full px-3 py-1.5 bg-primary1 text-textColor font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95">

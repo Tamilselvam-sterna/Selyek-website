@@ -4,7 +4,7 @@ import { CiLinkedin, CiMail } from "react-icons/ci";
 function Footer() {
   return (
     <div className="text-graay  max-container px-6 w-full ">
-      <div className="flex justify-between">
+      <div className="flex justify-between py-8">
         <ul>
           <li className="font-bold text-2xl text-primary">Company</li>
           <div className="flex flex-col space-y-3 pt-2">

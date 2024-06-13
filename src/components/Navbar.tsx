@@ -35,11 +35,6 @@ function Navbar() {
         >
           STERNA
         </div>
-        {/* { href: "#", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#products", label: "Products" },
-  { href: "#about-us", label: "About us" },
-  { href: "#contact-us", label: "Contact us" }, */}
         <ul className="flex items-center gap-8 max-lg:hidden space-x-5">
           <li className="flex space-x-10">
             <a
@@ -116,10 +111,18 @@ function Navbar() {
               </a>
             </li>
           ))} */}
-        </ul>
-
+        </ul>{" "}
+        {/* <Input
+          radius={"lg"}
+          placeholder="Search"
+          leftSection={
+            <div className="relative bottom-0">
+              <SearchNormal size={20} />
+            </div>
+          }
+        /> */}
         <div className="flex space-x-4">
-          <Input
+          {/* <Input
             radius={"lg"}
             placeholder="Search"
             leftSection={
@@ -127,7 +130,7 @@ function Navbar() {
                 <SearchNormal size={20} />
               </div>
             }
-          />{" "}
+          /> */}
           <button
             className={
               "max-lg:hidden font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95 px-3 py-1.5 border  bg-transparent border-primary"
@@ -143,7 +146,6 @@ function Navbar() {
             </div>
           </button>
         </div>
-
         <div
           className="max-lg:block hidden cursor-pointer"
           onClick={() => {
