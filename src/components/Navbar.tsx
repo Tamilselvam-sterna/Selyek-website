@@ -3,12 +3,14 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { navLinks } from "../constants";
 import clsx from "clsx";
-import { SearchNormal, User } from "iconsax-react";
-import { Button, Input, Menu } from "@mantine/core";
+import { ArrowDown2 } from "iconsax-react";
+import { Menu } from "@mantine/core";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [colorChange, setColorchange] = useState(false);
+  const navigate = useNavigate();
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 100) {
@@ -23,129 +25,186 @@ function Navbar() {
   return (
     <header
       className={
-        "fixed z-10 top-0 left-0 w-full  duration-500 transition-all ease-in-out bg-textColor"
+        "fixed  top-0 left-0 w-full z-20  duration-500 transition-all ease-in-out bg-white"
       }
     >
       {/**desktop nav */}
       <nav className="flex items-center justify-between px-6 max-container py-4">
-        <div
+        {/* <div
           className={
-            "text-3xl font-bold font-gabarito tracking-wider text-blue-400"
+            "text-3xl font-bold font-gabarito tracking-wider text-primary1"
           }
+        > */}
+        <div
+          className="flex text-3xl justify-center items-center text-primary1 px-2 py-3 rounded-lg font-extrabold   tracking-wider no-underline active:scale-95"
+          onClick={() => navigate("/")}
         >
-          STERNA
+          SELYEK
         </div>
         <ul className="flex items-center gap-8 max-lg:hidden space-x-5">
-          <li className="flex space-x-10">
-            <a
-              href="#"
-              className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
-            "
-            >
-              Home
-            </a>
-            <a
-              href="#services"
-              className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
-            "
-            >
-              Services
-            </a>
-            <Menu trigger="hover">
-              <Menu.Target>
-                <a
-                  href="#products"
-                  className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
-            "
-                >
+          <Menu
+            trigger="hover"
+            transitionProps={{ transition: "rotate-right", duration: 150 }}
+          >
+            <Menu.Target>
+              <div className="flex space-x-1">
+                <p className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1 hover:cursor-pointer">
                   Products
-                </a>
+                </p>
+                <span className="flex items-center">
+                  <ArrowDown2 size="15" color="#002740" />
+                </span>
+              </div>
+            </Menu.Target>
+
+            <Menu.Dropdown>
+              <div className="bg-white h-40 w-full flex px-3 flex-col justify-evenly rounded-xl">
+                <Menu.Item>
+                  <p
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                    onClick={() => navigate("/padlocks")}
+                  >
+                    Padlocks
+                  </p>
+                </Menu.Item>
+                <Menu.Item
+                  component="a"
+                  href="#products"
+                  className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                >
+                  Green Seal
+                </Menu.Item>
+                <Menu.Item
+                  component="a"
+                  href="#products"
+                  className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                >
+                  Mewa
+                </Menu.Item>
+              </div>
+            </Menu.Dropdown>
+          </Menu>
+          <li className="flex space-x-10">
+            <Menu
+              trigger="hover"
+              transitionProps={{ transition: "rotate-right", duration: 150 }}
+            >
+              <Menu.Target>
+                <div className="flex space-x-1">
+                  <p className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1 hover:cursor-pointer">
+                    Solutions
+                  </p>
+                  <span className="flex items-center">
+                    <ArrowDown2 size="15" color="#002740" />
+                  </span>
+                </div>
               </Menu.Target>
 
               <Menu.Dropdown>
-                <div className="bg-white h-10 w-50 flex px-3 flex-col justify-center rounded-xl">
-                  <a
-                    href="#products"
-                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
-            "
+                <div className="bg-white h-40 w-full flex px-3 flex-col justify-evenly rounded-xl">
+                  <Menu.Item>
+                    <p
+                      className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                      onClick={() => navigate("/banking")}
+                    >
+                      Banking
+                    </p>
+                  </Menu.Item>
+                  <Menu.Item
+                    onClick={() => navigate("/telecom")}
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
                   >
-                    Padlocks
-                  </a>
+                    Telecom
+                  </Menu.Item>
+                  <Menu.Item
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                    onClick={() => navigate("/logistics")}
+                  >
+                    Logistics
+                  </Menu.Item>
                 </div>
               </Menu.Dropdown>
             </Menu>
-            <ul className="dropdown hidden absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg">
-              <li>
-                <a
-                  href="#product1"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Product 1
-                </a>
-              </li>
-            </ul>
-            <a
-              href="#about-us"
-              className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
-            "
+            <Menu
+              trigger="hover"
+              transitionProps={{ transition: "rotate-right", duration: 150 }}
             >
-              About us
-            </a>
-            <a
-              href="#contact-us"
-              className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
+              {" "}
+              <Menu.Target>
+                <div className="flex space-x-1">
+                  <a
+                    href=""
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
             "
+                  >
+                    Company
+                  </a>
+                  <span className="flex items-center">
+                    <ArrowDown2 size="15" color="#002740" />
+                  </span>
+                </div>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <div className="bg-white h-35 w-full flex px-3 flex-col justify-center rounded-xl">
+                  <Menu.Item
+                    component="a"
+                    href="#about-us"
+                    onClick={() => navigate("/")}
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                  >
+                    About
+                  </Menu.Item>
+                  <Menu.Item
+                    component="a"
+                    href="#contact-us"
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                  >
+                    Contact
+                  </Menu.Item>
+                </div>
+              </Menu.Dropdown>
+            </Menu>
+            <Menu
+              trigger="hover"
+              transitionProps={{ transition: "rotate-right", duration: 150 }}
             >
-              Contact us
-            </a>
+              {" "}
+              <Menu.Target>
+                <div className="flex space-x-1">
+                  <a
+                    href=""
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1
+            "
+                  >
+                    Resources
+                  </a>
+                  <span className="flex items-center">
+                    <ArrowDown2 size="15" color="#002740" />
+                  </span>
+                </div>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <div className="bg-white h-35 w-full flex px-3 flex-col justify-center rounded-xl">
+                  <Menu.Item
+                    component="a"
+                    href="#about-us"
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                  >
+                    Blog
+                  </Menu.Item>
+                  <Menu.Item
+                    component="a"
+                    href="#contact-us"
+                    className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
+                  >
+                    Support
+                  </Menu.Item>
+                </div>
+              </Menu.Dropdown>
+            </Menu>
           </li>
-          {/* {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={
-                  "font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
-                }
-              >
-                {link.label}
-              </a>
-            </li>
-          ))} */}
         </ul>{" "}
-        {/* <Input
-          radius={"lg"}
-          placeholder="Search"
-          leftSection={
-            <div className="relative bottom-0">
-              <SearchNormal size={20} />
-            </div>
-          }
-        /> */}
-        <div className="flex space-x-4">
-          {/* <Input
-            radius={"lg"}
-            placeholder="Search"
-            leftSection={
-              <div className="relative bottom-0">
-                <SearchNormal size={20} />
-              </div>
-            }
-          /> */}
-          <button
-            className={
-              "max-lg:hidden font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95 px-3 py-1.5 border  bg-transparent border-primary"
-            }
-          >
-            <div className="flex space-x-4">
-              <span>
-                <User size="20" />
-              </span>
-              <a href="#contact-us" className={"text-primary"}>
-                Login
-              </a>
-            </div>
-          </button>
-        </div>
+        <div className="flex space-x-4"></div>
         <div
           className="max-lg:block hidden cursor-pointer"
           onClick={() => {

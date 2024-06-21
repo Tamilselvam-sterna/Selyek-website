@@ -7,6 +7,8 @@ export default {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         gabarito: ["Gabarito", "sans-serif"],
+        beneton: ["Benton"],
+        forgotten: ["Forgotten+Futurist"],
       },
       colors: {
         primary: "#002740",
@@ -16,9 +18,12 @@ export default {
         primary1: "#00B5E2",
         black: "#141212",
         graay: "#606A70",
-        gradient1: "#84ffc9",
-        gradient2: "#aab2ff",
+        gradient1: "#80d0c7",
+        gradient2: "#13547a",
         gradient3: "#eca0ff",
+        g1: "#7F7FD5",
+        g2: "#91EAE4",
+        g3: "#e93a28",
       },
       animation: {
         tilt: "tilt 10s infinite linear",

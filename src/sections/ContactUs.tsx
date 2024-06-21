@@ -1,30 +1,74 @@
-import { FaTelegramPlane } from "react-icons/fa";
-import contactUsImg from "../assets/contact-us.svg";
+import { CallCalling, Location } from "iconsax-react";
 import { Input, Textarea } from "@mantine/core";
+import { CiMail } from "react-icons/ci";
 
 function ContactUs() {
   return (
-    <>
-      <div className="h-[100px] bg-gradient-to-r from-gradient1  via-gradient2 to-gradient3  w-full">
-        <p className="flex h-[100px] justify-center align-middle items-center font-bold text-4xl text-gray-700">
-          Contact Us
-        </p>
-      </div>
-      <div className="relative max-container w-11/12 md:w-9/12 xl:w-1/2  border grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-10 justify-start bg-textColor px-8 pt-4 lg:px-16 mt-12 py-10 lg:py-14 rounded-md shadow-xl">
-        <div>
-          <p className="text-4xl font-extrabold  text-primary1">Contact</p>
-          <p className="tracking-normal leading-none font-normal mt-2">
-            Just leave your contact with us and we will get back to you shortly!
-          </p>
-          <img
-            src={contactUsImg}
-            alt="contact-us image"
-            className="w-full max-lg:hidden block mt-4"
-          />
-        </div>
+    <div className="relative px-6 py-4 space-y-4 container max-container  flex flex-1 flex-col items-center justify-evenly">
+      <p className="font-bold text-4xl tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
+        Contact Us
+      </p>
 
-        <form className="">
-          <div className="space-y-2">
+      <div className="flex w-full justify-around">
+        <div className=" ">
+          <div className="w-full">
+            <div className="mb-12 max-w-full lg:mb-0">
+              <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[32px]">
+                GET IN TOUCH WITH US
+              </h2>
+              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6 max-w-[600px] font-beneton">
+                At Sterna Security, we value your feedback and are here to
+                assist with any inquiries you may have. Please feel free to
+                reach out to us using the form below, or contact us directly via
+                phone or email.
+              </p>
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="mr-6 flex h-[80px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <Location size="30" color="#00B5E2" />
+                </div>
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    Our Location
+                  </h4>
+                  <p className="text-base text-body-color dark:text-dark-6 font-beneton">
+                    169, West Sambandam Road, R.S Puram, Coimbatore, TamilNadu -
+                    641 002, India.{" "}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <CallCalling size="30" color="#00B5E2" />
+                </div>
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    Phone Number
+                  </h4>
+                  <p className="text-base text-body-color dark:text-dark-6 font-beneton">
+                    0422 433 4800
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <CiMail size="30" color="#00B5E2" />
+                </div>
+                <div className="w-full">
+                  <h4 className="mb-1 text-xl  font-beneton text-dark dark:text-white">
+                    Email Address
+                  </h4>
+                  <p className="text-base text-body-color font-beneton dark:text-dark-6">
+                    info@sternadevices.in
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form className="w-[500px]">
+          <div className="space-y-2 ">
             <label htmlFor="firstName" className="input-label">
               First name
             </label>
@@ -34,7 +78,7 @@ function ContactUs() {
               radius={"md"}
               size="md"
               className=""
-              placeholder="John"
+              placeholder="First name"
               required
             />
             <label htmlFor="lastName" className="input-label">
@@ -45,7 +89,7 @@ function ContactUs() {
               id="lastName"
               radius={"md"}
               size="md"
-              placeholder="Doe"
+              placeholder="Last name"
               required
             />
             <label htmlFor="email" className="input-label">
@@ -56,7 +100,7 @@ function ContactUs() {
               id="email"
               radius={"md"}
               size="md"
-              placeholder="Johndoe@gmail.com"
+              placeholder="Email"
               required
             />
             <label htmlFor="mobile" className="input-label">
@@ -67,7 +111,7 @@ function ContactUs() {
               id="mobile"
               radius={"md"}
               size="md"
-              placeholder="9876543210"
+              placeholder="Mobile number"
               required
             />
             <label htmlFor="message" className="input-label">
@@ -78,11 +122,11 @@ function ContactUs() {
             </div>
           </div>
           <button className="mt-4 w-full px-3 py-1.5 bg-primary1 text-textColor font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95">
-            <FaTelegramPlane className="text-4x" />
+            Send
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

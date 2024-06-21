@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Benton+Sans+Book&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ForgottenFuturist&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +10,8 @@
 
 @layer base {
   body {
+    /* font-family: "Benton Sans Book", sans-serif; */
+
     @apply overflow-x-hidden font-gabarito;
   }
 
@@ -88,4 +92,20 @@
   .animation-delay-600 {
     animation-delay: 6s;
   }
+}
+
+.hover-icon-container:hover .icon-path {
+  fill: #00b5e2;
+}
+
+.hover-text-container:hover .text-color {
+  color: white;
+}
+
+.hover-background-container:hover .background-color {
+  background: white;
+}
+
+.hover-para-container:hover .para {
+  color: white;
 }
