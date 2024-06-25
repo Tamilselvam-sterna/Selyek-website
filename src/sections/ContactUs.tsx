@@ -4,7 +4,7 @@ import { CiMail } from "react-icons/ci";
 
 function ContactUs() {
   return (
-    <div className="relative px-6 py-4 space-y-4 container max-container  flex flex-1 flex-col items-center justify-evenly">
+    <div className="relative px-6  space-y-4 container max-container  flex flex-1 flex-col items-center justify-evenly">
       <p className="font-bold text-4xl tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
         Contact Us
       </p>

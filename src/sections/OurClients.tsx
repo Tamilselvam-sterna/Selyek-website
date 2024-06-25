@@ -3,11 +3,11 @@ import { clientsMarqueeUrl } from "../utills/index";
 function Clients() {
   return (
     <>
-      <div className="relative px-6  space-y-4 container max-container   flex flex-1 flex-col items-center">
-        <div className="font-bold text-4xl   tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
-          Working With the Best Clients and Partners
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-12 w-full">
+      <div className="font-bold text-4xl   tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
+        Working With the Best Clients and Partners
+      </div>
+      <div className="relative px-6  space-y-4 container max-container   flex flex-1 flex-col items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-12 w-full justify-center items-center">
           {clientsMarqueeUrl.map((client, index) => (
             <div
               key={index}
