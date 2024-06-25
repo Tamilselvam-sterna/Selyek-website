@@ -19,7 +19,7 @@ function Footer() {
                 Contact Us
               </a>
             </li>
-            <li>Careers</li>
+            <li>Careers</li>/
           </div>
         </ul>
         <ul className="mb-4 lg:mb-0">

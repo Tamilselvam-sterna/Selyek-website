@@ -17,7 +17,7 @@ export default function Home() {
 
       <section
         id="clients"
-        className="h-[600px] bg-white flex flex-col justify-center items-center"
+        className="h-[600px] bg-white flex flex-col  justify-center items-center"
       >
         <Clients />
       </section>
