@@ -1,3 +1,4 @@
+import { Accordion } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
@@ -53,6 +54,27 @@ function Telecom() {
                 the ecosystem, covering organisations such as mobile network
                 operators, tower companies and data centre service providers.{" "}
               </p>
+              <Accordion variant="contained">
+                <Accordion.Item value={"1"}>
+                  <Accordion.Control className="font-bold text-xl">
+                    Electronic Keyless Padlocks
+                  </Accordion.Control>
+                  <Accordion.Panel>sdvf</Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value={"2"}>
+                  <Accordion.Control className="font-bold text-xl">
+                    Selyek
+                  </Accordion.Control>
+                  <Accordion.Panel>sdvf</Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value={"3"}>
+                  <Accordion.Control className="font-bold text-xl">
+                    {" "}
+                    Intelligent Key Management System
+                  </Accordion.Control>
+                  <Accordion.Panel>sdvf</Accordion.Panel>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </div>
         </motion.div>

@@ -25,40 +25,6 @@ export default {
         g2: "#91EAE4",
         g3: "#e93a28",
       },
-      animation: {
-        tilt: "tilt 10s infinite linear",
-        blob: "blob 7s infinite",
-      },
-      keyframes: {
-        tilt: {
-          "0%, 50%, 100%": {
-            transform: "rotate(0deg)",
-          },
-          "25%": {
-            transform: "rotate(3deg)",
-          },
-          "75%": {
-            transform: "rotate(-3deg)",
-          },
-        },
-        blob: {
-          "0%": {
-            transform: "scale(1.0) translate(0px, 0px)",
-          },
-          "25%": {
-            transform: "scale(1.1) translate(15px, -15px)",
-          },
-          "50%": {
-            transform: "scale(1.2) translate(30px, 10px)",
-          },
-          "75%": {
-            transform: "scale(1.1) translate(15px, -15px)",
-          },
-          "100%": {
-            transform: "scale(1.0) translate(0px, 0px)",
-          },
-        },
-      },
     },
   },
   plugins: [],

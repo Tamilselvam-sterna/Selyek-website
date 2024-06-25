@@ -2,10 +2,10 @@ import { Card } from "@mantine/core";
 
 const Service = () => {
   return (
-    <div className="relative px-6 py-4 space-y-4 container max-container flex flex-1 flex-col items-center justify-center">
-      <p className="font-bold text-4xl   tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
+    <div className="relative pt-3   container max-container flex flex-1 flex-col items-center ">
+      <div className="font-bold text-4xl   tracking-wider lg:text-4xl w-screen h-[70px]  bg-gradient-to-r from-primary1  to-teal-400 text-white  text-transparent flex justify-center items-center">
         Services
-      </p>
+      </div>
       <div className=" bg-white">
         <section className="py-20">
           <div className="container mx-auto px-6 text-center">

@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import { navLinks } from "../constants";
+import { navLinks } from "../utills";
 import clsx from "clsx";
 import { ArrowDown2 } from "iconsax-react";
 import { Menu } from "@mantine/core";
@@ -28,13 +28,7 @@ function Navbar() {
         "fixed  top-0 left-0 w-full z-20  duration-500 transition-all ease-in-out bg-white"
       }
     >
-      {/**desktop nav */}
       <nav className="flex items-center justify-between px-6 max-container py-4">
-        {/* <div
-          className={
-            "text-3xl font-bold font-gabarito tracking-wider text-primary1"
-          }
-        > */}
         <div
           className="flex text-3xl justify-center items-center text-primary1 px-2 py-3 rounded-lg font-extrabold   tracking-wider no-underline active:scale-95"
           onClick={() => navigate("/")}
@@ -44,7 +38,10 @@ function Navbar() {
         <ul className="flex items-center gap-8 max-lg:hidden space-x-5">
           <Menu
             trigger="hover"
-            transitionProps={{ transition: "rotate-right", duration: 150 }}
+            transitionProps={{
+              transition: "fade-up",
+              duration: 220,
+            }}
           >
             <Menu.Target>
               <div className="flex space-x-1">
@@ -87,7 +84,10 @@ function Navbar() {
           <li className="flex space-x-10">
             <Menu
               trigger="hover"
-              transitionProps={{ transition: "rotate-right", duration: 150 }}
+              transitionProps={{
+                transition: "fade-up",
+                duration: 220,
+              }}
             >
               <Menu.Target>
                 <div className="flex space-x-1">
@@ -127,7 +127,10 @@ function Navbar() {
             </Menu>
             <Menu
               trigger="hover"
-              transitionProps={{ transition: "rotate-right", duration: 150 }}
+              transitionProps={{
+                transition: "fade-up",
+                duration: 220,
+              }}
             >
               {" "}
               <Menu.Target>
@@ -166,7 +169,10 @@ function Navbar() {
             </Menu>
             <Menu
               trigger="hover"
-              transitionProps={{ transition: "rotate-right", duration: 150 }}
+              transitionProps={{
+                transition: "fade-up",
+                duration: 220,
+              }}
             >
               {" "}
               <Menu.Target>
@@ -220,10 +226,8 @@ function Navbar() {
         </div>
       </nav>
 
-      {/**Mobile menu nav */}
       {isMenuOpen && (
         <nav className="fixed inset-0 bg-primary lg:hidden">
-          {/**Mobile menu header */}
           <div className="absolute w-full top-0 py-4 px-6 flex justify-between">
             <div
               className={
@@ -242,7 +246,6 @@ function Navbar() {
             </div>
           </div>
 
-          {/**menu */}
           <ul className="lg:hidden flex flex-col items-center justify-center h-full ">
             {navLinks.map((item) => (
               <li key={item.label} className="space-y-4">
