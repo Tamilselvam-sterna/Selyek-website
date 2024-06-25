@@ -118,7 +118,7 @@ function ContactUs() {
               Message
             </label>
             <div>
-              <Textarea rows={4} cols={47} />
+              <Textarea placeholder="Message" rows={4} cols={47} />
             </div>
           </div>
           <button className="mt-4 w-full px-3 py-1.5 bg-primary1 text-textColor font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95">

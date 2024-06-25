@@ -60,26 +60,6 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-
-  .default-button {
-    @apply px-3 py-1.5 border border-textColor bg-transparent text-textColor font-semibold font-montserrat rounded-md text-base cursor-pointer active:scale-95;
-  }
-
-  .input-label {
-    @apply text-sm font-medium text-gray-900;
-  }
-
-  .input-label-dark {
-    @apply text-sm font-medium text-textColor;
-  }
-
-  .input {
-    @apply bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
-  }
-
-  .input-dark {
-    @apply bg-gray-50 border border-gray-300 text-primary text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
-  }
 }
 
 @layer utilities {
@@ -108,4 +88,8 @@
 
 .hover-para-container:hover .para {
   color: white;
+}
+.indicator {
+  outline: 2px red;
+  outline-offset: -3px;
 }

@@ -1,7 +1,8 @@
 import { CiFacebook, CiLinkedin, CiMail } from "react-icons/ci";
-// import GoogleMaps from "../components/GoogleMaps";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
   return (
     <div className="text-graay max-container flex flex-col space-y-16 px-6 w-full">
       <div className="flex flex-col lg:flex-row justify-between py-8">
@@ -41,15 +42,28 @@ function Footer() {
           <li className="font-bold text-2xl text-primary">Solutions</li>
           <div className="flex flex-col space-y-3 pt-2">
             <li>
-              <a href="#products" className="text-graay hover:underline">
+              <p
+                onClick={() => navigate("/banking")}
+                className="text-graay hover:underline hover:cursor-pointer"
+              >
                 Banking
-              </a>
+              </p>
             </li>
-            <li>Telecom</li>
             <li>
-              <a href="#products" className="text-graay hover:underline">
+              <p
+                onClick={() => navigate("/telecom")}
+                className="text-graay hover:underline hover:cursor-pointer"
+              >
+                Telecom
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => navigate("/logistics")}
+                className="text-graay hover:underline hover:cursor-pointer"
+              >
                 Logistics
-              </a>
+              </p>
             </li>
           </div>
         </ul>

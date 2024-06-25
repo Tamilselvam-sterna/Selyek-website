@@ -17,12 +17,7 @@ const heroSectionVariant: Variants = {
 
 function Hero() {
   return (
-    <div className="relative px-60 py-4 space-y-4  min-h-dvh flex flex-1 flex-col  justify-center bg-[url('/1.jpg')] w-screen object-cover">
-      {/* <div className="absolute bg-yellow-500 top-64 right-10 md:top-96 md:right-56 lg:top-48 lg:right-28 w-[200px] h-[200px] rounded-full mix-blend-hard-light filter blur-xl opacity-40  animate-blob animation-delay-200" />
-      <div className="absolute bg-pink-500 top-52 left-10 md:top-80 md:left-48 lg:top-52 lg:left-36 w-[200px] h-[200px] rounded-full mix-blend-hard-light filter blur-xl opacity-40  animate-blob " />
-      <div className="absolute bg-purple-600 top-60  right-12 md:top-72 md:right-56 lg:top-60 lg:left-[670px] w-[200px] h-[200px] rounded-full mix-blend-hard-light filter blur-xl opacity-40  animate-blob animation-delay-400" />
-      <div className="absolute bg-cyan-600 top-72 left-16 md:top-72 md:left-56 lg:top-[440px] lg:left-96 w-[200px] h-[200px] rounded-full mix-blend-hard-light filter blur-xl opacity-40  animate-blob animation-delay-600" />
-      <div className="absolute bg-orange-600 top-80 right-24 md:top-[400px] md:right-80 lg:top-[500px] lg:right-96 w-[200px] h-[200px] rounded-full mix-blend-hard-light filter blur-xl opacity-40  animate-blob animation-delay-200" /> */}
+    <div className="relative px-60 py-4 space-y-4  min-h-dvh flex flex-1 flex-col items-center  justify-center bg-[url('/1.jpg')] w-screen object-cover">
       <motion.div
         variants={heroSectionVariant}
         initial="initial"

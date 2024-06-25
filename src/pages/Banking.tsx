@@ -1,3 +1,4 @@
+import { Accordion } from "@mantine/core";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Banking() {
@@ -28,7 +29,7 @@ function Banking() {
             <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Security Solutions to Protect Your Assets
             </h2>
-            <p className="mb-4 font-beneton text-black">
+            <p className="mb-4 font-beneton text-black indent-16">
               Sterna provides a range of high-quality banking security systems
               that offer the ideal solution when it comes to access control for
               financial institutions. Our wide range of Electro Mechanical and
@@ -37,6 +38,27 @@ function Banking() {
               These solutions help to minimise the risk of disruption to service
               and ensure business continuity.
             </p>
+            <Accordion variant="contained">
+              <Accordion.Item value={"1"}>
+                <Accordion.Control className="font-bold text-xl">
+                  Electronic Keyless Padlocks
+                </Accordion.Control>
+                <Accordion.Panel>sdvf</Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value={"2"}>
+                <Accordion.Control className="font-bold text-xl">
+                  Selyek
+                </Accordion.Control>
+                <Accordion.Panel>sdvf</Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value={"3"}>
+                <Accordion.Control className="font-bold text-xl">
+                  {" "}
+                  Intelligent Key Management System
+                </Accordion.Control>
+                <Accordion.Panel>sdvf</Accordion.Panel>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </motion.div>
       </div>

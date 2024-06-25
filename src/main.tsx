@@ -8,13 +8,13 @@ import {
 import App from "./App.tsx";
 import "./index.css";
 import MainPage from "./sections/main.tsx";
-import Home from "./sections/homes.tsx";
-import PadLocks from "./sections/Padlocks.tsx";
+import Home from "./sections/Home.tsx";
 import "@mantine/carousel/styles.css";
 import ProductDetailPage from "./components/ProductDetailPage.tsx";
 import Banking from "./pages/Banking.tsx";
 import Telecom from "./pages/Telecom.tsx";
 import Logistics from "./pages/Logistics.tsx";
+import PadLocks from "./sections/Padlocks.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
