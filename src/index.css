@@ -12,7 +12,7 @@
   body {
     /* font-family: "Benton Sans Book", sans-serif; */
 
-    @apply overflow-x-hidden font-gabarito;
+    @apply overflow-x-hidden font-gabarito w-screen;
   }
 
   * {
