@@ -171,7 +171,7 @@ function Products() {
         >
           <Carousel.Slide className="w-full">
             <div className="flex  w-full h-full">
-              <img src="/adobe1.jpeg" className="object-contain  w-1/2" />
+              <img src="/BLE.png" className="bg-gray-700" />
               <section className="bg-blue-100 py-12 flex flex-col justify-center items-center">
                 <div className="container mx-auto px-4 text-center">
                   <h2 className="text-4xl font-bold mb-4">

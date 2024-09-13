@@ -26,9 +26,12 @@ function Footer() {
           <li className="font-bold text-2xl text-primary">Products</li>
           <div className="flex flex-col space-y-3 pt-2">
             <li>
-              <a href="#products" className="text-graay hover:underline">
-                Smart Padlock
-              </a>
+              <p
+                onClick={() => navigate("/BLEpadlock")}
+                className="text-graay hover:underline"
+              >
+                SELYEK intelligent BLE padlock
+              </p>
             </li>
             <li>GateWay</li>
             <li>

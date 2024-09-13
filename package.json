@@ -34,6 +34,7 @@
     "embla-carousel-react": "^7.1.0",
     "framer-motion": "^10.18.0",
     "iconsax-react": "^0.0.8",
+    "lucide-react": "^0.439.0",
     "moment": "^2.30.1",
     "react": "^18.2.0",
     "react-chrono": "^2.6.1",

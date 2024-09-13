@@ -8,11 +8,13 @@ export const navLinks = [
 
 export const clientsMarqueeUrl = [
   { href: "/hpcl.svg", label: "Hindusthan Petroleum" },
+  { href: "/bpcl.svg", label: "Bharat Petroleum" },
   { href: "/iocl.svg", label: "Indian Oil" },
   { href: "/shell.svg", label: "Shell" },
-  { href: "/bpcl.svg", label: "Bharat Petroleum" },
+  { href: "/meru.svg", label: "Mount meru" },
   { href: "/jio.svg", label: "Jio" },
   { href: "/kvb.svg", label: "Karur Vysya Bank" },
+  { href: "/titaan.svg", label: "titan" },
 ];
 
 export const items = [

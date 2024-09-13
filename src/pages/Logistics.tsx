@@ -11,12 +11,18 @@ function Logistics() {
         </p>
 
         <motion.div
-          animate={{ x: 100 }}
+          // animate={{ x: 100 }}
+          // transition={{
+          //   ease: "linear",
+          //   duration: 2,
+          //   x: { duration: 1 },
+          // }}
           transition={{
-            ease: "linear",
             duration: 2,
-            x: { duration: 1 },
           }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           className="gap-8 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
         >
           <div className="w-full h-full">
@@ -61,20 +67,45 @@ function Logistics() {
                   <Accordion.Control className="font-bold text-xl">
                     Electronic Keyless Padlocks
                   </Accordion.Control>
-                  <Accordion.Panel>sdvf</Accordion.Panel>
+                  <Accordion.Panel>
+                    {" "}
+                    SELYEK is our smart bluetooth, industrial-grade, keyless,
+                    battery-powered padlock designed to work in harsh
+                    environments. The lock is tamper-resistant, with an optional
+                    tamper monitoring feature. SELYEK is our smart bluetooth,
+                    industrial-grade, keyless, battery-powered padlock designed
+                    to work in harsh environments. The lock is tamper-resistant,
+                    with an optional tamper monitoring feature. SELYEK is our
+                    smart bluetooth, industrial-grade, keyless, battery-powered
+                    padlock designed to work in harsh environments. The lock is
+                    tamper-resistant, with an optional tamper monitoring
+                    feature.
+                  </Accordion.Panel>
                 </Accordion.Item>
                 <Accordion.Item value={"2"}>
                   <Accordion.Control className="font-bold text-xl">
                     Selyek
                   </Accordion.Control>
-                  <Accordion.Panel>sdvf</Accordion.Panel>
+                  <Accordion.Panel>
+                    {" "}
+                    SELYEK is our smart bluetooth, industrial-grade, keyless,
+                    battery-powered padlock designed to work in harsh
+                    environments. The lock is tamper-resistant, with an optional
+                    tamper monitoring feature.
+                  </Accordion.Panel>
                 </Accordion.Item>
                 <Accordion.Item value={"3"}>
                   <Accordion.Control className="font-bold text-xl">
                     {" "}
                     Intelligent Key Management System
                   </Accordion.Control>
-                  <Accordion.Panel>sdvf</Accordion.Panel>
+                  <Accordion.Panel>
+                    {" "}
+                    SELYEK is our smart bluetooth, industrial-grade, keyless,
+                    battery-powered padlock designed to work in harsh
+                    environments. The lock is tamper-resistant, with an optional
+                    tamper monitoring feature.
+                  </Accordion.Panel>
                 </Accordion.Item>
               </Accordion>
             </div>

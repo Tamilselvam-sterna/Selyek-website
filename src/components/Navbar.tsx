@@ -30,10 +30,15 @@ function Navbar() {
     >
       <nav className="flex items-center justify-between px-6 max-container py-4">
         <div
-          className="flex text-3xl justify-center items-center text-primary1 px-2 py-3 rounded-lg font-extrabold   tracking-wider no-underline active:scale-95"
+          className="flex justify-center items-center text-primary1 px-2 py-3 rounded-lg font-extrabold tracking-wider no-underline active:scale-95"
           onClick={() => navigate("/")}
         >
-          SELYEK
+          <img
+            src="/Selyeklogo.png"
+            alt="Company Logo"
+            style={{ height: "60px", width: "auto" }}
+            className="object-fill"
+          />
         </div>
         <ul className="flex items-center gap-8 max-lg:hidden space-x-5">
           <Menu
@@ -59,9 +64,9 @@ function Navbar() {
                 <Menu.Item>
                   <p
                     className="font-montserrat leading-normal lg:text-lg font-medium text-primary hover:text-primary1"
-                    onClick={() => navigate("/padlocks")}
+                    onClick={() => navigate("/BLEpadlock")}
                   >
-                    Padlocks
+                    SELYEK BLE Padlock
                   </p>
                 </Menu.Item>
                 <Menu.Item
@@ -234,7 +239,7 @@ function Navbar() {
                 "text-4xl font-bold font-gabarito tracking-wider text-textColor"
               }
             >
-              Sterna
+              Selyek
             </div>
             <div
               className="cursor-pointer"

@@ -56,7 +56,7 @@ function ContactUs() {
                   <CiMail size="30" color="#00B5E2" />
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl  font-beneton text-dark dark:text-white">
+                  <h4 className="mb-1 text-xl  font-bold text-dark dark:text-white">
                     Email Address
                   </h4>
                   <p className="text-base text-body-color font-beneton dark:text-dark-6">
