@@ -3,12 +3,9 @@ import { IconDumpling, IconUsb } from "@tabler/icons-react";
 import {
   Lock,
   Bluetooth,
-  Battery,
   Thermometer,
   Scale,
-  Zap,
   Hexagon,
-  Chrome,
   ShieldCheck,
   Ruler,
   Droplet,

@@ -12,7 +12,7 @@ const Service = () => {
             {/* <h2 className="text-4xl font-semibold text-gray-800">
               Our Services
             </h2> */}
-            <p className="mt-4 font-bold text-2xl">
+            <p className="mt-4 font-bServicesold text-2xl">
               We have worked on complex, scalable, distributed and mission
               critical applications
             </p>
